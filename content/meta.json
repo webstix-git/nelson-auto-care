@@ -1,0 +1,68 @@
+{
+  "404": {
+    "file": "404.html",
+    "title": "Page Not Found | Nelson Auto Care La Crosse, WI",
+    "description": "The page you requested could not be found. Return to Nelson Auto Care or contact the shop.",
+    "bodyClass": ""
+  },
+  "about": {
+    "file": "about.html",
+    "title": "About Us | Nelson Auto Care, La Crosse, WI",
+    "description": "Nelson Auto Care is a local La Crosse auto repair shop focused on quality work, honest prices and customers. Service is the Difference.",
+    "bodyClass": ""
+  },
+  "ai-policy": {
+    "file": "ai-policy.html",
+    "title": "AI Policy | Nelson Auto Care La Crosse, WI",
+    "description": "How Nelson Auto Care uses artificial intelligence responsibly while keeping people in charge of the work.",
+    "bodyClass": ""
+  },
+  "ai-readiness-service-index": {
+    "file": "ai-readiness-service-index.html",
+    "title": "AI Readiness Service Index | Nelson Auto Care WI",
+    "description": "A plain summary of Nelson Auto Care for AI assistants, search tools, and anyone who wants the facts at a glance.",
+    "bodyClass": ""
+  },
+  "brake-service": {
+    "file": "brake-service.html",
+    "title": "Brake Service & Repair in La Crosse, WI | Nelson Auto Care",
+    "description": "Brake inspections and repair in La Crosse, WI. Pads, rotors, calipers, fluid and more. Inspection $69.99 with up to one hour of diagnostics. Loaner cars available.",
+    "bodyClass": ""
+  },
+  "contact": {
+    "file": "contact.html",
+    "title": "Contact Us | Nelson Auto Care, La Crosse, WI",
+    "description": "Contact Nelson Auto Care at 4131 Mormon Coulee Ct, La Crosse, WI. Call 608-519-1437. Open Monday-Friday, 8 AM-5 PM.",
+    "bodyClass": ""
+  },
+  "home": {
+    "file": "index.html",
+    "title": "Nelson Auto Care | Auto Repair in La Crosse, WI",
+    "description": "Nelson Auto Care: honest, quality auto repair in La Crosse, WI. Maintenance, brakes, suspension, wheel alignments, pre-purchase and state inspections. Service is the Difference.",
+    "bodyClass": "home"
+  },
+  "privacy-policy": {
+    "file": "privacy-policy.html",
+    "title": "Privacy Policy | Nelson Auto Care La Crosse, WI",
+    "description": "How Nelson Auto Care collects, uses, and protects the information you share with us.",
+    "bodyClass": ""
+  },
+  "services": {
+    "file": "services.html",
+    "title": "Auto Repair Services | Nelson Auto Care, La Crosse, WI",
+    "description": "Routine maintenance, brakes, suspension, wheel alignments, pre-purchase and state inspections in La Crosse, WI. Inspection $69.99 incl. up to one hour of diagnostics.",
+    "bodyClass": ""
+  },
+  "site-map": {
+    "file": "site-map.html",
+    "title": "Site Map | Nelson Auto Care La Crosse, WI",
+    "description": "Every page on the Nelson Auto Care website in one place.",
+    "bodyClass": ""
+  },
+  "thank-you": {
+    "file": "thank-you.html",
+    "title": "Thank You | Contact Nelson Auto Care WI",
+    "description": "Thanks for contacting Nelson Auto Care. We will get in touch with you shortly.",
+    "bodyClass": ""
+  }
+}
