@@ -14,18 +14,32 @@ export default function SiteEffects({ children }) {
 
     const btn = document.querySelector(".menu-btn");
     const nav = document.getElementById("nav");
+    let backdrop = document.querySelector(".nav-backdrop");
+    let createdBackdrop = false;
+    if (!backdrop) {
+      backdrop = document.createElement("div");
+      backdrop.className = "nav-backdrop";
+      backdrop.setAttribute("aria-hidden", "true");
+      document.body.appendChild(backdrop);
+      createdBackdrop = true;
+    }
+    const setNavOpen = (open) => {
+      if (!nav || !btn) return;
+      nav.classList.toggle("open", open);
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+      document.body.classList.toggle("nav-open", open);
+    };
     if (btn && nav) {
-      const onMenu = () => {
-        const o = nav.classList.toggle("open");
-        btn.setAttribute("aria-expanded", o ? "true" : "false");
+      const onMenu = (e) => {
+        e.stopPropagation();
+        setNavOpen(!nav.classList.contains("open"));
       };
       btn.addEventListener("click", onMenu);
       cleanups.push(() => btn.removeEventListener("click", onMenu));
 
       const onNavClick = (e) => {
         if (e.target.closest("a") && !e.target.closest(".drop-btn")) {
-          nav.classList.remove("open");
-          btn.setAttribute("aria-expanded", "false");
+          setNavOpen(false);
           document.querySelectorAll(".nav-item.open").forEach((item) => {
             item.classList.remove("open");
             const d = item.querySelector(".drop-btn");
@@ -35,6 +49,14 @@ export default function SiteEffects({ children }) {
       };
       nav.addEventListener("click", onNavClick);
       cleanups.push(() => nav.removeEventListener("click", onNavClick));
+
+      const onBackdrop = () => setNavOpen(false);
+      backdrop.addEventListener("click", onBackdrop);
+      cleanups.push(() => {
+        backdrop.removeEventListener("click", onBackdrop);
+        setNavOpen(false);
+        if (createdBackdrop && backdrop.parentNode) backdrop.parentNode.removeChild(backdrop);
+      });
     }
 
     const dropHandlers = [];

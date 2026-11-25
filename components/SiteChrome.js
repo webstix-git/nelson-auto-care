@@ -2,7 +2,10 @@
 
 import { usePathname } from "next/navigation";
 import { navItems, routes } from "@/lib/routes";
-import { PhoneIcon, ClockIcon, PinIcon } from "./Icons";
+import { PhoneIcon } from "./Icons";
+
+const MAP_URL =
+  "https://www.google.com/maps/search/?api=1&query=4131+Mormon+Coulee+Ct+La+Crosse+WI+54601";
 
 export default function SiteChrome() {
   const pathname = usePathname();
@@ -16,22 +19,17 @@ export default function SiteChrome() {
     <div className="site-chrome">
       <div className="topbar">
         <div className="container">
-          <div className="group">
-            <a href="tel:+16085191437">
-              <PhoneIcon />
-              608-519-1437
+          <div className="group topbar-end">
+            <a href={MAP_URL} target="_blank" rel="noopener">
+              Get Directions
             </a>
+            <span className="pipe" aria-hidden="true">
+              |
+            </span>
             <span className="status">
-              <ClockIcon />
               <span className="dot"></span>
               <span className="txt">Closed Now - Open Mon-Fri 8 AM-5 PM</span>
             </span>
-          </div>
-          <div className="group">
-            <a href="https://www.google.com/maps/search/?api=1&query=4131+Mormon+Coulee+Ct+La+Crosse+WI+54601">
-              <PinIcon />
-              4131 Mormon Coulee Ct., La Crosse, WI 54601
-            </a>
           </div>
         </div>
       </div>
