@@ -4,7 +4,9 @@ import { FootPhoneIcon, FootPinIcon, FootClockIcon } from "./Icons";
 export default function Footer() {
   return (
     <footer className="site-footer">
-      <div className="stripe"></div>
+      <div className="foot-hazard" aria-hidden="true">
+        <div className="foot-hazard-stripes"></div>
+      </div>
       <div className="container">
         <div className="foot-grid">
           <div className="foot-brand">
