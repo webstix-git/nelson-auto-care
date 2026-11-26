@@ -178,7 +178,7 @@ section{position:relative}
 .page-hero::before{content:"";position:absolute;right:-8%;top:0;bottom:0;width:17%;background:var(--yellow);transform:skewX(-14deg);opacity:.95}
 .page-hero .container{position:relative;z-index:1;padding-top:48px;padding-bottom:48px;flex:1;display:flex;flex-direction:column;justify-content:center}
 .page-hero .ph-wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:48px;align-items:center}
-.page-hero .stripe{margin-top:auto}
+.page-hero .stripe{margin-top:auto;position:relative;z-index:2}
 .page-hero-photo::before{display:none}
 .page-hero-photo h1,.page-hero-photo .lead{text-shadow:0 2px 18px rgba(0,0,0,.65);max-width:18ch}
 .page-hero-photo .lead{color:#ececf1;max-width:42ch}
