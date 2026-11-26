@@ -180,8 +180,8 @@
       if(invalid.length){
         if(err){
           err.textContent=invalid.some(function(el){return el.name==='email' && el.value.trim()})
-            ?'Please Fill In All Required Fields And Enter A Valid Email.'
-            :'Please Fill In All Required Fields.';
+            ?'Please enter a valid email address.'
+            :'Please complete the required fields so we can get back to you: Name, Phone number, Vehicle and service needed. The message field is optional.';
           err.classList.add('show');
         }
         invalid[0].focus();

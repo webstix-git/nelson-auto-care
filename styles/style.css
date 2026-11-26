@@ -179,6 +179,9 @@ section{position:relative}
 .frame{position:relative}
 .frame::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:4px solid var(--yellow);z-index:0}
 .frame .ph{position:relative;z-index:1}
+.ph:has(img){background:#111;border-style:solid;border-color:transparent;padding:0}
+.ph:has(img)::before{display:none}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
 .sec-paper .ph,.sec-white .ph{border-color:#b08500}
 .photo{margin:0;position:relative;aspect-ratio:var(--ar,4/3);overflow:hidden;background:#111;border-bottom:4px solid var(--yellow)}
 .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
@@ -267,7 +270,7 @@ section{position:relative}
 .audience-card p{margin:0;color:#cfcfd6}
 .num{font-family:var(--head);font-weight:800;font-size:3.6rem;line-height:1;color:var(--yellow)}
 .stat b{display:block;font-family:var(--head);font-weight:800;font-size:3.4rem;line-height:1;color:var(--yellow)}
-.stat span{color:#d0d0d8;font-size:.95rem}
+.stat span{color:#d0d0d8;font-size:16px}
 
 /* price callout */
 .price-box{background:var(--yellow);color:#000;padding:34px;display:grid;grid-template-columns:1fr;gap:12px;align-items:start;clip-path:polygon(0 0,calc(100% - 28px) 0,100% 28px,100% 100%,28px 100%,0 calc(100% - 28px))}
@@ -563,11 +566,12 @@ a.tel-ic svg,a[href^="tel:"].tel-ic svg{width:1em;height:1em;flex:0 0 auto;fill:
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 
 /* home hero with extended mechanic photo */
-.hero-photo{margin-top:calc(-1 * var(--chrome-h));padding-top:var(--chrome-h);min-height:min(100vh,920px);background:
+.hero-photo{margin-top:calc(-1 * var(--chrome-h));padding-top:var(--chrome-h);min-height:min(100vh,920px);display:flex;flex-direction:column;background:
     linear-gradient(90deg,rgba(0,0,0,.9) 0%,rgba(0,0,0,.72) 36%,rgba(0,0,0,.28) 62%,rgba(0,0,0,.1) 100%),
     url(/images/hero-mechanic.jpg) right center/cover no-repeat,
     #000;
 }
+.hero-photo .stripe{margin-top:auto}
 .hero-photo::before{display:none}
 .hero-photo h1,.hero-photo .lead{text-shadow:0 2px 18px rgba(0,0,0,.6)}
 .hero-photo .lead{color:#ececf1}
@@ -582,7 +586,9 @@ a.tel-ic svg,a[href^="tel:"].tel-ic svg{width:1em;height:1em;flex:0 0 auto;fill:
   .hero-card{justify-self:stretch;max-width:none}
 }
 
-.card>.ph{margin:-32px -28px 24px;width:calc(100% + 56px);border:0;border-bottom:3px solid var(--yellow)}
+.card>.ph{margin:-32px -28px 24px;width:calc(100% + 56px);border:0;border-bottom:3px solid var(--yellow);background:#111;padding:0}
+.card>.ph:has(img)::before{display:none}
+.card>.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
 .card>.ph .in{gap:4px;padding:12px}
 .card>.ph svg{width:38px;height:38px}
 .card>.ph b{font-size:1rem}
