@@ -111,7 +111,7 @@ p{margin:0 0 1em;font-size:18px}
 .nav .btn,.nav .btn.sm{margin-left:10px;padding:18px 28px;font-size:20px}
 .btn-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
 .btn-row.center{justify-content:center}
-.btn-below{margin:14px 0 0}
+.btn-below{margin:36px 0 0}
 
 /* ---------- shared bits ---------- */
 .eyebrow{display:inline-block;font-family:var(--head);font-weight:800;font-style:italic;text-transform:uppercase;letter-spacing:.16em;color:var(--yellow);font-size:1.05rem;margin-bottom:14px}
@@ -234,8 +234,9 @@ section{position:relative}
 .sec-black .dark-tile,.sec-navy .dark-tile,.sec-char .dark-tile{border-color:#3a3a42}
 .dark-tile .icon{color:var(--yellow);margin-bottom:12px}
 .dark-tile p{color:#cfcfd6;margin:0}
-.audience-card{background:rgba(255,255,255,.05);border:1px solid #3a3a42;overflow:hidden;display:flex;flex-direction:column}
-.audience-card .ph{border:0;border-bottom:3px solid var(--yellow);aspect-ratio:16/10;margin:0}
+.audience-card{background:rgba(255,255,255,.05);border:1px solid #3a3a42;overflow:hidden;display:flex;flex-direction:column;padding:0;isolation:isolate}
+.audience-card .ph{display:block;border:0;border-bottom:3px solid var(--yellow);aspect-ratio:16/10;width:100%;margin:0;padding:0;overflow:hidden}
+.audience-card .ph img{position:absolute;inset:-1px;width:calc(100% + 2px);height:calc(100% + 2px);max-width:none;object-fit:cover;display:block;transform:translateZ(0)}
 .audience-card .body{padding:22px 22px 24px}
 .audience-card h3,.audience-card h4{margin:0 0 .35em;font-size:1.35rem}
 .audience-card p{margin:0;color:#cfcfd6}

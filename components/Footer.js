@@ -89,7 +89,7 @@ export default function Footer() {
                   <FootClockIcon />
                 </span>
                 <div>
-                  Mon - Fri: 8 AM - 5 PM
+                  Mon - Fri: 8AM - 5PM
                   <br />
                   Sat - Sun: Closed
                 </div>

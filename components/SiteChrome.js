@@ -28,7 +28,7 @@ export default function SiteChrome() {
             </span>
             <span className="status">
               <span className="dot"></span>
-              <span className="txt">Closed Now - Open Mon-Fri 8 AM-5 PM</span>
+              <span className="txt">Closed Now - Open Mon-Fri 8AM-5PM</span>
             </span>
           </div>
         </div>

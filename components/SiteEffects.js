@@ -160,8 +160,8 @@ export default function SiteEffects({ children }) {
         const t = s.querySelector(".txt");
         if (t)
           t.textContent = open
-            ? "Open Now - Closes 5:00 PM"
-            : "Closed Now - Open Mon-Fri 8 AM-5 PM";
+            ? "Open Now - Closes 5:00PM"
+            : "Closed Now - Open Mon-Fri 8AM-5PM";
       });
       const map = { Mon: "mon", Tue: "tue", Wed: "wed", Thu: "thu", Fri: "fri", Sat: "sat", Sun: "sun" };
       const row = document.querySelector('[data-day="' + map[d.weekday] + '"]');
