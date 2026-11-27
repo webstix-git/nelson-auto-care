@@ -27,7 +27,7 @@ export default function Footer() {
                 <a href={routes.services}>Services</a>
               </li>
               <li>
-                <a href={routes.brakeService}>Brake Service</a>
+                <a href={routes.brakeService}>Brake Service &amp; Repair</a>
               </li>
               <li>
                 <a href={routes.contact}>Contact Us</a>
